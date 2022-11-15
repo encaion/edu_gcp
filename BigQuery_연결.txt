@@ -1,0 +1,11 @@
+# !pip install google-cloud-bigquery --user
+# !pip install db-dtypes --user
+
+from google.cloud import bigquery as bq
+# import os
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "json 파일 경로"
+
+client = bq.Client()
+query_01 = "select * EXCEPT(casual) from sample_data.sample_data_tbl limit 5"
+result_q = client.query(query_01)
+result_q.to_dataframe()
