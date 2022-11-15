@@ -1,15 +1,15 @@
-$ sudo apt-get update
- 
-$ sudo apt update
-$ sudo apt install python3-pip
-$ pip3 --version
+sudo apt-get update
+sudo apt update
 
-$ sudo apt-get install jupyter-notebook
-$ jupyter --version
-$ jupyter notebook
+sudo apt install python3-pip
+# pip3 --version
 
-$ jupyter notebook --generate-config
-$ vi ~/.jupyter/jupyter_notebook_config.py
+sudo apt-get install jupyter-notebook
+# jupyter --version
+# jupyter notebook
+
+jupyter notebook --generate-config
+vi ~/.jupyter/jupyter_notebook_config.py
 
 
 c = get_config() 
