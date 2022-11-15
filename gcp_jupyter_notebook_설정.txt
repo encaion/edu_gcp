@@ -1,10 +1,10 @@
 sudo apt-get update
 sudo apt update
 
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 # pip3 --version
 
-sudo apt-get install jupyter-notebook
+sudo apt-get install jupyter-notebook -y
 # jupyter --version
 # jupyter notebook
 
