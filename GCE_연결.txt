@@ -1,8 +1,8 @@
 # !pip install google-cloud-storage --user
-from google.cloud import storage
-import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "json 파일 경로"
+from google.cloud import storage
+# import os
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "json 파일 경로"
 
 storage_client = storage.Client()
 buckets = list(storage_client.list_buckets())
